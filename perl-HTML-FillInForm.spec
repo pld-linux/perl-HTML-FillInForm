@@ -9,7 +9,7 @@ Summary:	Populates HTML Forms with CGI data
 Summary(pl):	Wype³nia formê HTML z danymi CGI
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.04
-Release:	0.1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
