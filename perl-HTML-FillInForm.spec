@@ -15,8 +15,8 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fcb04346abbf5082f541973314254ea8
 URL:		http://search.cpan.org/dist/HTML-FillInForm/
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	perl-devel >= 5.6.0
+BuildRequires:	rpm-perlprov >= 4.0-112
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,8 +35,7 @@ z niego do parsowania HTML i wstawiania danych w tagi formularza.
 
 %build
 # Don't use pipes here: they generally don't work. Apply a patch.
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+%{__perl} Makefile.PL
 
 %{__make}
 
@@ -54,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_vendorlib}/%{pdir}
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
+%dir %{perl_sitelib}/%{pdir}
+%{perl_sitelib}/%{pdir}/%{pnam}.pm
 %{_mandir}/man3/*
