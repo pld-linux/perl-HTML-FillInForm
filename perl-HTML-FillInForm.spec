@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	FillInForm
+%define		pdir	HTML
+%define		pnam	FillInForm
 Summary:	Populates HTML Forms with CGI data
 Summary(pl):	Wype³nia formê HTML z danymi CGI
 Name:		perl-HTML-FillInForm
