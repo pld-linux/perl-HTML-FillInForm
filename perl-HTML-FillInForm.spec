@@ -7,7 +7,7 @@
 %define	pnam	FillInForm
 Summary:	Populates HTML Forms with CGI data
 Summary(pl):	Wype³nia formê HTML z danymi CGI
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-HTML-FillInForm
 Version:	1.04
 Release:	2
 License:	Artistic
@@ -34,7 +34,6 @@ z niego do parsowania HTML i wstawiania danych w tagi formularza.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-# Don't use pipes here: they generally don't work. Apply a patch.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 
@@ -54,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_vendorlib}/%{pdir}
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
+%dir %{perl_vendorlib}/HTML
+%{perl_vendorlib}/HTML/FillInForm.pm
 %{_mandir}/man3/*
