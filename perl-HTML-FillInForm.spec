@@ -8,12 +8,12 @@
 Summary:	Populates HTML Forms with CGI data
 Summary(pl):	Wype³nia formê HTML z danymi CGI
 Name:		perl-HTML-FillInForm
-Version:	1.04
-Release:	2
+Version:	1.05
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	fcb04346abbf5082f541973314254ea8
+# Source0-md5:	9bcb1d029aae3d33b51913291ed1e9d6
 URL:		http://search.cpan.org/dist/HTML-FillInForm/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
