@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	FillInForm
 Summary:	Populates HTML Forms with CGI data
-Summary(pl):	Wype≥nia formÍ HTML z danymi CGI
+Summary(pl.UTF-8):   Wype≈Çnia formƒô HTML z danymi CGI
 Name:		perl-HTML-FillInForm
 Version:	1.05
 Release:	3
@@ -29,9 +29,9 @@ This module automatically inserts data from a previous HTML form into
 the HTML input and select tags. It is a subclass of HTML::Parser and
 uses it to parse the HTML and insert the values into the form tags.
 
-%description -l pl
-Modu≥ automatycznie wstawia dane z poprzedniego formularza HTML w
-wej∂cie i tagi select HTML-a. Jest to podklasa HTML::Parser i korzysta
+%description -l pl.UTF-8
+Modu≈Ç automatycznie wstawia dane z poprzedniego formularza HTML w
+wej≈õcie i tagi select HTML-a. Jest to podklasa HTML::Parser i korzysta
 z niego do parsowania HTML i wstawiania danych w tagi formularza.
 
 %prep
