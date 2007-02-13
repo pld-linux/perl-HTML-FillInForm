@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	FillInForm
 Summary:	Populates HTML Forms with CGI data
-Summary(pl.UTF-8):   Wypełnia formę HTML z danymi CGI
+Summary(pl.UTF-8):	Wypełnia formę HTML z danymi CGI
 Name:		perl-HTML-FillInForm
 Version:	1.05
 Release:	3
